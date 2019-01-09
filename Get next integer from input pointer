@@ -32,7 +32,7 @@ int getint(int *pn)
     
     if(!isdigit(c) && c !=EOF && c!='+' && c!='-')
     {
-        ungetch(c); /* it's not a number */
+        ungetch(c);
         return 0;
     }
     
