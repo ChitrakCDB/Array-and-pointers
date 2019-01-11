@@ -45,3 +45,12 @@ If the string t exhausts, that is, it’s length, len becomes 0, then we known t
 mystrncat, takes three arguments, str1, str2 and dest. It concatenates n characters from str2 to str1 into a new string dest. It does this by copying all characters from str1 to dest and then keeps a track of count n, and copies n characters of str2 to dest. After copying n characters, it closes the dest string by 0 character.
 
 mystrncmp, compares the lhs string with rhs string. It compares one character at a time and as long as both characters are same, it keeps going and if the lhs is exhaused before n characters are compared, it means we still satisfy the criteria and we return 0. Otherwise, it returns the difference between lhs character and rhs character, which will be 0 if they are equal, negative if lhs is smaller than rhs or positive value if lhs is greater than rhs.
+
+
+
+
+expr, evaluate rpn from command line:
+The main function has a signature now, that is int main(int argc, char *argv[]), that is it takes the command line args, argc for count of the args and argv is the array which stores the arguments.
+input will be stored in the array agrv as strings. In this program, we go about by getting each argument from argv and then giving that as the input to our RPN calculator,
+
+If we find an operand, using the push function, we push it to the stack and when we find a operator in the input, we pop() the two operands out of the stack and do the operation.
