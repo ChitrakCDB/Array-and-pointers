@@ -34,6 +34,14 @@ mystrlen assigns the address of s to p in char *p = s and then goes one characte
 
 mystrncpy copies n characters of source string to destination. It does this by copying or overwriting one character a time from source to destination and keeps track of count n. When source is exhausted or n characters are copied, it checks if there further characters in destination, if it exists, it goes past them without over-writing and then closes the string by 0.
 
+
+
+
+ strend returns 1 if string t occurs at the end of the string s:
+The primary part of this program is the strend function, which takes two character pointers, s and t. It calculates the length of t and stores in the variable len. And then, we back off till the last characters in both s and t.
+And then we look for the match from the end. This is checked in this while loop. While the len is > 0, check if s and t are same and back off one character at a time.
+If the string t exhausts, that is, it’s length, len becomes 0, then we known that string t occurs at the end of string s and we return 1. Otherwise, we return 0.
+
 mystrncat, takes three arguments, str1, str2 and dest. It concatenates n characters from str2 to str1 into a new string dest. It does this by copying all characters from str1 to dest and then keeps a track of count n, and copies n characters of str2 to dest. After copying n characters, it closes the dest string by 0 character.
 
 mystrncmp, compares the lhs string with rhs string. It compares one character at a time and as long as both characters are same, it keeps going and if the lhs is exhaused before n characters are compared, it means we still satisfy the criteria and we return 0. Otherwise, it returns the difference between lhs character and rhs character, which will be 0 if they are equal, negative if lhs is smaller than rhs or positive value if lhs is greater than rhs.
