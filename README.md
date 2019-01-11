@@ -19,3 +19,11 @@ with some garbage values.
 Get next float from input:
 the program is similar to next integer program but instead of integer we are 
 getting float values.
+
+
+strcat(s,t) copies the string t to the end of s:
+
+int this program we have used mgetline function i have useed this before also which takes the line and read it
+till the end of file.
+and the function mystrcat reads the line untile it is 0
+and then the value of t is combined with s \\(*s=*t)!='\0'.
