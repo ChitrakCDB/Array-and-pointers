@@ -27,3 +27,4 @@ int this program we have used mgetline function i have useed this before also wh
 till the end of file.
 and the function mystrcat reads the line untile it is 0
 and then the value of t is combined with s \\(*s=*t)!='\0'.
+and the new strinfg is combined.
